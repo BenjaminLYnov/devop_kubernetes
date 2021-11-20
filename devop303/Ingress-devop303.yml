@@ -1,0 +1,17 @@
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: devop303
+  namespace: devop303
+spec:
+  rules:
+    - host: devop3030.benjamin.tk
+      http:
+        paths:
+          - path: /
+            pathType: Prefix
+            backend:
+              service:
+                name: devop303
+                port:
+                  number: 80

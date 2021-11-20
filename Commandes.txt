@@ -1,0 +1,18 @@
+minikube start
+
+kubeApply.py
+
+minikube addons enable ingress
+
+minikube service -n ingress-nginx ingress-nginx-controller
+
+kubectl logs devop303-6545cb476b-d8h7s
+
+kubectl get namespace
+
+HMEL install kibana
+
+kubectl create -f namespace.yaml
+
+kubectl apply -f quota.yaml -n=devop303
+kubectl apply -f quota.yaml -n=hello-world
